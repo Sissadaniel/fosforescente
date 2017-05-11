@@ -111,6 +111,15 @@ body {
     padding-bottom: 50px;
 }
 
+.disp_flex a {
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.disp_flex a:hover {
+    color: #7fd8ff;
+}
+
 body.getting-ready {
     padding-top: 40%;
     overflow: hidden;
@@ -11891,7 +11900,7 @@ Single Product Demo
 
 #container {
   overflow: hidden;
-  height: 600px;
+  height: 700px;
   background: #edeae8;
   position: relative;
 }
@@ -11905,11 +11914,45 @@ video {
 }
 
 
+.ver_al {
+    padding-top: 25px;
+}
+
+.pos_abs {
+    position: absolute;
+    z-index: 1;
+    padding-top: 40px;
+    left: 50%;
+}
+
+.disp_flex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25vh;
+    color: white;
+}
+
+.pos_rel {
+    position: relative;
+    left: -50%;
+}
 
 
 
 
 
+@media (max-width: 900px) {
 
+    .disp_flex a {
+        font-size: 20px;
+    }
 
+}
 
+@media (max-width: 390px) {
+
+    .disp_flex a {
+        font-size: 14px;
+    }
+
+}
