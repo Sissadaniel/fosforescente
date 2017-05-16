@@ -44,7 +44,9 @@ Style Sheets
 ====================-->
 
     <div class="pre-loading">
-        <figure class="loading-logo"><img src="./assets/img/fosfo_logob.png" alt="ravish logo"></figure>
+        <figure class="loading-logo">
+        <img src="./assets/img/fosfo_logob.png" alt="fosforescente logo">
+        </figure>
         <div class="loading-animation">
             <div class="loader-container arc-rotate2">
                 <div class="loader">
@@ -68,7 +70,7 @@ Style Sheets
                         <a class="navbar-brand ver_al" href="#home"><img src="./assets/img/fosfo_logo_nav.png" alt="Dispute Bills">
                         </a>
                     </div>
-                    <div id="navbar3" class="navbar-collapse collapse">
+                    <div id="navbar3" class="navbar-collapse collapse ">
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#about_us">About</a></li>
                             <li class="dropdown">
@@ -91,20 +93,28 @@ Style Sheets
         <div class="pos_abs">
             <div class="pos_rel">
                 <div class="row">
-                    <img class="col-lg-10 col-lg-offset-1 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1" src="./assets/img/fosfo_logo.png" alt="">
+                    <img class="col-lg-10 col-lg-offset-1 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12 col-xs-offset-0" src="./assets/img/fosfo_logo.png" alt="">
                 </div>
                 <div class="row">
                     <div class="disp_flex">
                         <div><a href="#about_us">about </a></div>
-                        <div><a href="#finished">films </a></div>
+                        <div class="dropdown">
+                                <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-expanded="false">films <span class="caret"></span></a>
+                                <ul class="dropdown-menu drop_hero" role="menu">
+                                    <li ><a class="white_font" href="#finished">Finished</a></li>
+                                    <li ><a class="white_font" href="#post">Post-production</a></li>
+                                    <li><a class="white_font" href="#development">In-development</a></li>
+                                </ul>
+                            </div>
                         <div><a href="#contact">contact </a></div>
+
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="container">
-            <video autoplay muted loop><source src="./assets/img/Jellyfish.mp4" type="video/mp4"></video>
+        <div  id="container">
+            <video class="video_jelly" autoplay muted loop><source src="./assets/img/Jellyfish.mp4" type="video/mp4"></video>
         </div>
 
         <!--<div class="splash">
@@ -393,6 +403,12 @@ Style Sheets
 
             });
         }(jQuery));
+
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});
     </script>
 
 </body>
