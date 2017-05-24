@@ -10147,9 +10147,10 @@ Single Product Demo
     .manageResults.category .manageTriger {
         right: 0;
     }
-    .pad_top {
-    padding-top: 50px
-}
+
+    .marg_top{
+        margin-top: 50px
+    }
 
     .credit_lg{
         display: none;
@@ -12040,9 +12041,58 @@ a.white_font {
 }
 
 
-
-
-
 .row_height {
     min-height: 300px
 }
+
+.slick-slide {
+  text-align: center;
+  color: #419be0;
+  background: white;
+}
+
+.still_pad {
+    padding-bottom: 30px;
+}
+
+.modal-fullscreen {
+  background-color: rgba(0,0,0,0.8)
+}
+.modal-fullscreen .modal-content {
+  background: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.modal-dialog {
+    max-width: 2000px;
+}
+
+.close {
+    position: fixed;
+    color: rgba(255,255,255,1);
+    right: 2%;
+    top:2%;
+    font-size: 100px;
+    font-family: sans-serif;
+    z-index: 100;
+}
+
+.close:hover {
+
+    color: white;
+}
+
+
+.zicon {
+    z-index: 100
+}
+
+@media (min-width: 768px){
+.modal-dialog {
+    width: 1000px;
+    margin: 30px auto;
+    }
+    }
+
