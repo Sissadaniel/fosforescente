@@ -238,6 +238,14 @@ Style Sheets
             <div class="row pad_row">
                 <div class="col-md-4 col-md-offset-2">
                     <img src="./assets/img/cl_poster.jpeg" class="img_center" alt="">
+                    <div class="pad_icon">
+                        <div class="col-xs-2 col-xs-offset-4">
+                            <a href="https://vimeo.com/146941343" target="_blank"><img class="zicon" src="./assets/img/play_icon.png" alt=""></a>
+                        </div>
+                        <div class="col-xs-2">
+                            <a data-toggle="modal" data-target="#modal-fullscreen4"><img class="zicon" src="./assets/img/stills_icon.png" alt=""></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4 font_p pad_top marg_top"><b>Title: </b>Leona<b><br>Production Company:</b> Fosforescente <br><b>Year:</b> 2018 <br><b>Genre:</b> Drama <br><b>Director:</b> Isaac Cherem <br><b>Writers: </b>Isaac Cherem & Naian González Norvind <br><b>Producer:</b> Salomón Askenazi <br><b>Cast:</b> Naian González Norvind <br><b>Synopsis:</b> Ariela, a traditional Jew, meets Ivan, a boy who is not Jewish with whom he begins a secret relationship despite her family beliefs. Along with him, Ariela is exposed to the world that was outside her community bubble. Ariela is discovered and threatened. Maintaining her relationship would mean leaving her life as a Jew and losing forever contact with her family and friends, who oppose courtship.
                 </div>
@@ -441,6 +449,69 @@ Style Sheets
                 });
             </script>
         </modal3>
+
+        <modal4>
+            <!-- Modal fullscreen -->
+            <div class="modal modal-fullscreen fade" id="modal-fullscreen4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-6 still_pad">
+                                    <img src="./assets/img/leona_stills/l1.JPG" alt="">
+                                </div>
+                                <div class="col-md-6 still_pad">
+                                    <img src="./assets/img/leona_stills/l2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 still_pad">
+                                    <img src="./assets/img/leona_stills/l3.jpg" alt="">
+                                </div>
+                                <div class="col-md-6 still_pad">
+                                    <img src="./assets/img/leona_stills/l4.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 still_pad">
+                                    <img src="./assets/img/leona_stills/l5.jpg" alt="">
+                                </div>
+                                <div class="col-md-6 still_pad">
+                                    <img src="./assets/img/leona_stills/l6.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 still_pad">
+                                    <img src="./assets/img/leona_stills/l7.jpg" alt="">
+                                </div>
+                                <div class="col-md-6 still_pad">
+                                    <img src="./assets/img/leona_stills/l8.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 still_pad">
+                                    <img src="./assets/img/leona_stills/l9.jpg" alt="">
+                                </div>
+                                <div class="col-md-6 still_pad">
+                                    <img src="./assets/img/leona_stills/l10.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(".modal-fullscreen3").on('show.bs.modal', function() {
+                    setTimeout(function() {
+                        $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+                    }, 0);
+                });
+                $(".modal-fullscreen3").on('hidden.bs.modal', function() {
+                    $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+                });
+            </script>
+        </modal4>
 
 
 
