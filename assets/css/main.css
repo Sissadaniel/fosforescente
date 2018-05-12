@@ -11981,6 +11981,7 @@ video {
     justify-content: space-between;
     padding-top: 25vh;
     color: white;
+    min-width: 280px;
 }
 
 .pos_rel {
@@ -11998,7 +11999,7 @@ video {
 @media (max-width: 390px) {
 
     .disp_flex a {
-        font-size: 14px;
+        font-size: 18px;
     }
 
 }
