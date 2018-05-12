@@ -12139,3 +12139,12 @@ a.white_font {
     align-items: center;
     justify-content: center;
 }
+
+.icon_flexw {
+    margin: 0px 54px;
+}
+
+.stills_btn {
+    display: flex;
+    justify-content: center;
+}
