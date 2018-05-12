@@ -12129,3 +12129,13 @@ a.white_font {
 }
 }
 
+
+.flex_titulo {
+    display: flex;
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* margin: 0 auto; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
